@@ -1,0 +1,139 @@
+/* CSS Global  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #cfcfcf;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  background-color: none;
+  margin: 180px auto 20px;
+  
+}
+
+/* Card base */
+.card {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 25px 30px;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgb(255, 255, 255);
+  border-top: 4px solid#f006aa;
+  margin-bottom: 60px;
+}
+.card.module-2 {
+  border-top: 4px solid #54276f;
+}
+.card.module-3 {
+  border-top: 4px solid #4caf50;
+}
+.card.module-4 {
+  border-top: 4px solid #ff9800;
+}
+.card1.module-5 {
+  border-top: 4px solid #36cef4;
+}
+.card.module-6 {
+  border-top: 4px solid #e88446;
+}
+pre {background: #f1f1f1;
+        padding: 15px;
+        font-size: 0.9em;
+        border-left: 4px solid #e91e63;
+    }
+
+
+.note {
+    border-left: 4px solid #b8b8b8;
+    padding-left: 10px;
+    color: rgb(161, 160, 160);
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+.note::before {
+}
+
+code {
+  background-color: #ececec;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.badge {
+  
+}
+
+/* Images (global safe defaults) */
+img {
+        
+    }
+
+/* CSS For Group 1: Header  */
+header {
+  background-color: #fdfdfd;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px rgb(248, 190, 190);
+  /* fixed header */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+h1 {
+  color: red;
+}
+.list-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.list-menu li {
+  background-color: rgb(252, 114, 217);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.list-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.list-menu li:hover {
+  background-color: rgb(255, 12, 12);
+}
+
+
+
+/* CSS For Group 2: Card 1: Basics  */
+
+/* CSS For Group 3: Card 2: Resize & aspect  */
+
+.img_small {
+width: 10%;
+}
+
+/* CSS For Group 4: Card 3: Object fit  */
+
+/* CSS For Group 5: Card 4: Image as Link  */
+
+/* CSS For Group 6: Card 5: Gallery  */
+
+/* CSS For Group 7: Card 6: Responsive  */
+
+/* CSS For Group 8: Card 7: Figure & Caption + Task  */
+
+/* CSS For Group 9: Card 8: Local file tips  */
+
+/* CSS For Group 10: Back to Tutorial */
