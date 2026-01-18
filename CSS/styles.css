@@ -60,8 +60,7 @@ pre {background: #f1f1f1;
     border-radius: 2px;
 }
 
-.note::before {
-}
+
 
 code {
   background-color: #ececec;
@@ -69,14 +68,15 @@ code {
   padding: 4px;
 }
 
-.badge {
-  
+.badge {background-color: #ebc8ff;
+    color: rgb(135, 44, 255);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.6em;
 }
 
 /* Images (global safe defaults) */
-img {
-        
-    }
+
 
 /* CSS For Group 1: Header  */
 header {
