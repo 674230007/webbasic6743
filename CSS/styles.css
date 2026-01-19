@@ -9,15 +9,18 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #85ff87;
+  background-color: #92ffff;
   color: #333;
+  background-image: url("../file/sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
-
 .container {
   max-width: 1200px;
   background-color: none;
   margin: 180px auto 20px;
-  
 }
 
 /* Card base */
@@ -45,22 +48,20 @@ body {
 .card.module-6 {
   border-top: 4px solid #e88446;
 }
-pre {background: #f1f1f1;
-        padding: 15px;
-        font-size: 0.9em;
-        border-left: 4px solid #e91e63;
-    }
-
-
-.note {
-    border-left: 4px solid #b8b8b8;
-    padding-left: 10px;
-    color: rgb(161, 160, 160);
-    margin-top: 15px;
-    border-radius: 2px;
+pre {
+  background: #f1f1f1;
+  padding: 15px;
+  font-size: 0.9em;
+  border-left: 4px solid #e91e63;
 }
 
-
+.note {
+  border-left: 4px solid #b8b8b8;
+  padding-left: 10px;
+  color: rgb(161, 160, 160);
+  margin-top: 15px;
+  border-radius: 2px;
+}
 
 code {
   background-color: #ececec;
@@ -68,16 +69,20 @@ code {
   padding: 4px;
 }
 
-.badge {background-color: #ebc8ff;
-    color: rgb(135, 44, 255);
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.6em;
+.badge {
+  background-color: #dfd1e9;
+  color: rgb(178, 154, 224);
+  padding: 3px 8px;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  vertical-align: middle;
 }
 
 /* Images (global safe defaults) */
-
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* CSS For Group 1: Header  */
 header {
   background-color: #fdfdfd;
@@ -94,46 +99,122 @@ header {
 h1 {
   color: red;
 }
-.list-menu {
+.list-menu ul {
   display: flex;
   list-style: none;
   gap: 20px;
 }
 .list-menu li {
-  background-color: rgb(252, 114, 217);
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 30px;
+  transition: 0.5s ease;
 }
-.list-menu li a {
+.list-menu li:hover {
+  margin-top: 30px;
+  transform: translateY(-5px);
+}
+.list-menu a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  /* background-color: rgb(255, 84, 113); */
+  background: linear-gradient(135deg, rgb(65, 153, 153), rgb(189, 247, 255));
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px pink;
 }
-.list-menu li:hover {
-  background-color: rgb(255, 12, 12);
+.list-menu a:hover {
+  background: linear-gradient(135deg, rgb(63, 82, 255), rgb(157, 248, 255));
 }
-
-
 
 /* CSS For Group 2: Card 1: Basics  */
-
-/* CSS For Group 3: Card 2: Resize & aspect  */
-
-.img_small {
-width: 10%;
+.position {
+  display: flex;
+  align-items: center;
+  border: 2px dashed rgb(61, 159, 197);
+  margin: 15px 0;
+}
+.position.left {
+  justify-content: flex-start;
+}
+.position.center {
+  justify-content: center;
+}
+.position.right {
+  justify-content: flex-end;
 }
 
+.img_small {
+  width: 10%;
+  height: auto;
+}
+/* CSS For Group 3: Card 2: Resize & aspect  */
+.img-fixed {
+  width: 560px;
+  height: 160px;
+  object-fit: cover;
+}
 /* CSS For Group 4: Card 3: Object fit  */
-
+.obj-fit-image {
+  width: 800px;
+  height: 200px;
+  border: 1px solid black;
+}
+.obj-fit-image.contain {
+  object-fit: contain;
+}
+.obj-fit-image.fill {
+  object-fit: fill;
+}
+.obj-fit-image.cover {
+  object-fit: cover;
+}
 /* CSS For Group 5: Card 4: Image as Link  */
 
 /* CSS For Group 6: Card 5: Gallery  */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.gallery img {
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 15px;
+}
 
 /* CSS For Group 7: Card 6: Responsive  */
 
 /* CSS For Group 8: Card 7: Figure & Caption + Task  */
-
+figure {
+  margin: 20px 0;
+  text-align: center;
+}
 /* CSS For Group 9: Card 8: Local file tips  */
-
+.bg-img {
+  background-image: url("../file/sodsai.jpg");
+}
 /* CSS For Group 10: Back to Tutorial */
+.back-link {
+  /* display: inline-block;*/
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #6162a7;
+  font-weight: bold;
+  background-color: #9ce6fd;
+  text-align: center;
+  border-radius: 100px;
+  padding: 8px 0;
+}
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+.doodee {
+  margin-top: 15px;
+}
+html {
+  scroll-padding: 200px;
+  scroll-behavior: smooth;
+}
