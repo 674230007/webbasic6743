@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
   background-color: #92ffff;
   color: #333;
-  background-image: url("../file/sky.jpg");
+  background-image: url("file/sky.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -192,7 +192,7 @@ figure {
 }
 /* CSS For Group 9: Card 8: Local file tips  */
 .bg-img {
-  background-image: url("../file/sodsai.jpg");
+  background-image: url("file/sodsai.jpg");
 }
 /* CSS For Group 10: Back to Tutorial */
 .back-link {
@@ -218,3 +218,4 @@ html {
   scroll-padding: 200px;
   scroll-behavior: smooth;
 }
+
