@@ -6,11 +6,7 @@
     <title>รายงานผลเกรด</title>
 </head>
 <style>
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
+
 header {
 background-color: #5868b3;
 padding: 15px;
@@ -36,15 +32,19 @@ background-color: rgb(175, 106, 255);
 
 }
 .container {
-max-width: 1200px;
-background-color: none;
-margin: 20px auto;
+width: 900px;
+margin: 0 auto;
+
 }
 .card{
 border-radius: 25px;
-margin:10px;
+margin:20px auto;
+display: flex;
+justify-content: space-around;
 width: 900px;
 background-color: #ffffff;
+border-radius: 50px;
+padding: 20px;
 }
 .gallery {
 display: grid;
@@ -79,21 +79,40 @@ color: #ffffff;
 transition: 0.5s;
 }
 .profile{
-        width: 260px;
-        border-radius: 12px;
-        transition: 0.5s;
-    }
-.profile:hover {
-        transform: scale(1.03);
-        box-shadow: 0 4px 12px rgb(161, 160, 160);
-    }
-.profile{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.profile-card{
     background-color: rgb(247, 119, 46);
     color: #ffffff;
-    border-radius: 20px;
-    padding:20px 30px ;
+    border-radius: 15px;
+    padding:30px ;
     display: grid;
     transition: 0.5s;
+    flex: 1;
+    max-width: 500px;
+}
+.profile-card:hover{
+    transform: scale(1.05);
+}
+.profile-img img{
+    width: 220px;
+    height: 220px;
+    border: 5px solid #293685;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.profile-img img:hover{
+    transform: scale(1.1);
 }
 .doodee{
 display: grid;
@@ -139,25 +158,25 @@ footer{
             </div>
         </div>
 
-        <div class="card">
-            <div class="image" id="box1">
-            <img src="file/baimint.JPG" alt="profile">
+
+    <div class="profile">
+        <div class="profile-card">
+        <h3>👧Miss Yotwadee Hsp<h3>
+            <div class="loveyou">
+<p><span class="label">📚รหัสนักศึกษา:</span>674230007</p>
+<p><span class="label">👧ชื่อ-นามสกุล:</span>ยศวดี หาญสีภูมิ</p>
+<p><span class="label">📚🎓หมู่เรียน:</span>67/43</p>
+<p><span class="label">🧑‍🏫อาจารย์ที่ปรึกษา:</span>อ.พิชญา สุขปลั่ง</p>
+<p><span class="label">⛓️Github:</span>https://github.com/YotwadeeHansripoom</p>
             </div>
-        <div class="profile">
-            <br>
-<h3><strong>👧Miss Yotwadee Hsp</strong></h3>
-            <pre>
-<strong>📚รหัสนักศึกษา:</strong>674230007
-<strong>👧ชื่อ-นามสกุล:</strong>ยศวดี หาญสีภูมิ
-<strong>🎓หมู่เรียน:</strong>67/43
-<strong>🧑‍🏫อาจารย์ที่ปรึกษา:</strong>อ.พิชญา สุขปลั่ง
-<strong>⛓️Github:</strong>
-        </pre>
-            
-        </div>
         </div>
 
-        
+        <div class="profile-img">
+            <img src="../img/baimint.JPG" alt="profile">
+        </div>
+    </div>
+
+
         <pre>
         <div class="doodee">
         <h2 class="trem"><strong>📚ปี 1 เทอม 1: 3.72</strong></h2>
