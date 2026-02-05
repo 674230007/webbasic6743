@@ -17,13 +17,7 @@ h1{
     font-size: 40px;
     color: #ffffff;
 }
-img{
-width: 220px;
-height: 220px;
-display: flex; 
-border-radius: 50%;
 
-}
 body {
 font-family: Arial, sans-serif;
 line-height: 1.6;
@@ -36,85 +30,97 @@ width: 900px;
 margin: 0 auto;
 
 }
-.card{
+.card-header{
 border-radius: 25px;
 margin:20px auto;
 display: flex;
-justify-content: space-around;
+justify-content: center;
 width: 900px;
 background-color: #ffffff;
-border-radius: 50px;
-padding: 20px;
+border-radius: 12px;
+padding: 10px 20px;
+gap: 15px;
+align-items: center;
 }
-.gallery {
+.gallery ul {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 20px;
-
 }
-
-.cardgrade{
+.gallery li{
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(67, 162, 213);
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+.cardgrade-info{
 background-color: rgb(248, 25, 55);
 border-radius: 25px;
 padding: 10px 30px;
-margin: 15px 0;
+margin: 20px auto;
 width: 900px;
 box-shadow: 5px 5px 5px rgb(248, 190, 190);
+
 }
 h2{
     text-align: center;
     color: #ffffff;
 }
 .data{
-background-color: rgb(50, 143, 143);
-border-radius: 15px;
-padding: 20px;
-margin: 50px;
-gap: 10px;
-color: #15225e;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(127, 212, 255);
+border-radius: 8px;
+padding: 8px 16px;
+border: none;
+flex: 1;
+max-width: 200px;
+color: #3e6b95;
 }
-.data:hover{
+.gallery ul :hover{
 background-color: #f79a21;
 color: #ffffff;
 transition: 0.5s;
-}
-.profile{
-    width: 900px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 20px;
 }
 
 .profile-card{
     background-color: rgb(247, 119, 46);
     color: #ffffff;
-    border-radius: 15px;
+    border-radius: 20px;
     padding:30px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: grid;
-    transition: 0.5s;
-    flex: 1;
-    max-width: 500px;
+    min-width: 450px;
 }
-.profile-card:hover{
-    transform: scale(1.05);
+
+.profile-card hr {
+    width: 100%;          
+    border: 0;            
+    border-top: 1px solid #ffffff;     
 }
+
 .profile-img img{
-    width: 220px;
-    height: 220px;
-    border: 5px solid #293685;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.3s;
+    flex: 1;               /* จัดสัดส่วนพื้นที่ให้รูปภาพ */
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;    /* ทำเป็นวงกลม */
+    border: 6px solid #4a3aff; /* เส้นขอบสีน้ำเงิน */
+    object-fit: cover;     /* ป้องกันรูปเบี้ยว */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    
 }
 .profile-img img:hover{
     transform: scale(1.1);
 }
-.doodee{
+.gradebox{
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 20px;
@@ -136,13 +142,40 @@ text-align: center;
 font-size: 16px;
 }
 footer{
-            background-color: #224f5af3;
-            color: #ffffff; 
-            text-align: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            font-size: 16px;
-        }
+background-color: #224f5af3;
+color: #ffffff; 
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 16px;
+}
+.graedtrem{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.gradebox{
+    background-color: aquamarine;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.loveyou{
+    margin-right: 20px;
+    
+}
+.loveyou p {
+    text-align: left; 
+    margin-left: 20px;
+    
+}
+.gcolor {
+    color: red;
+    font-weight: bold;
+}
 </style>
 <body>
     <header>
@@ -150,24 +183,27 @@ footer{
     </header>
 
     <div class="container">
-        <div class="card">
+        <div class="card-header">
             <div class="gallery">
-                <p class="data" a href="#box1">🧑‍🏫ข้อมูลนักศึกษา</p>
-                <p class="data" a href="">📚ผลการเรียน</p>
-                <p class="data" a href="">📲ติดต่อ</p>
+                <ul>
+                    <li><a href="#box1">🧑‍🏫ข้อมูลนักศึกษา</a></li>
+                    <li><a href="#box2">📚ผลการเรียน</a></li>
+                    <li><a href="#box3">📲ติดต่อ</a></li>
+                </ul>
             </div>
         </div>
 
 
-    <div class="profile">
+    <div class="card-header" id="#box1">
         <div class="profile-card">
-        <h3>👧Miss Yotwadee Hsp<h3>
+        <h1>👧Miss Yotwadee Hsp</h1>
+        <hr>
             <div class="loveyou">
-<p><span class="label">📚รหัสนักศึกษา:</span>674230007</p>
-<p><span class="label">👧ชื่อ-นามสกุล:</span>ยศวดี หาญสีภูมิ</p>
-<p><span class="label">📚🎓หมู่เรียน:</span>67/43</p>
-<p><span class="label">🧑‍🏫อาจารย์ที่ปรึกษา:</span>อ.พิชญา สุขปลั่ง</p>
-<p><span class="label">⛓️Github:</span>https://github.com/YotwadeeHansripoom</p>
+<p>📚รหัสนักศึกษา:&emsp;&emsp;&emsp;674230007</p>
+<p>👧ชื่อ-นามสกุล:&emsp;&emsp;&emsp;ยศวดี หาญสีภูมิ</p>
+<p>🎓หมู่เรียน:&emsp;&emsp;&emsp;&emsp;&emsp;67/43</p>
+<p>🧑‍🏫อาจารย์ที่ปรึกษา:&emsp;&ensp;อ.พิชญา สุขปลั่ง</p>
+<p>⛓️Github:https://github.com/674230007/webbasic6743</p>
             </div>
         </div>
 
@@ -177,15 +213,15 @@ footer{
     </div>
 
 
-        <pre>
-        <div class="doodee">
-        <h2 class="trem"><strong>📚ปี 1 เทอม 1: 3.72</strong></h2>
-        <h2 class="trem"><strong>🗒️ปี 1 เทอม 2: 3.59</strong></h2>
-        <h3 class="trem"><strong>🖊️ปี 2 เทอม 1: 3.60</strong></h3>
-        </div>
-        </pre>
+<div class="graedtrem" id="">
 
-    <div class="cardgrade">
+        <div  class="gradebox">💡ปี 1 เทอม 1 : <span class="gcolor">3.75</span></div>
+        <div  class="gradebox">💡ปี 1 เทอม 2 : <span class="gcolor">3.59</span></div>
+        <div  class="gradebox">💡ปี 2 เทอม 1 : <span class="gcolor">3.60</span></div>
+    </div>
+</div>
+
+    <div class="cardgrade-info" id="box2">
         <h2>🏆เกรดเฉลี่ยสะสม: 3.61</h2>
     </div>
 
