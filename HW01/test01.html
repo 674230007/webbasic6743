@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายงานผลเกรด</title>
+</head>
+<style>
+
+header {
+background-color: #5868b3;
+padding: 15px;
+width: auto;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+color: #333;
+background-color: rgb(175, 106, 255);
+
+}
+.container {
+width: 900px;
+margin: 0 auto;
+
+}
+.card-header{
+border-radius: 25px;
+margin:20px auto;
+display: flex;
+justify-content: center;
+width: 900px;
+background-color: #ffffff;
+border-radius: 12px;
+padding: 10px 20px;
+gap: 15px;
+align-items: center;
+}
+.gallery ul {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+.gallery li{
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(67, 162, 213);
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+.cardgrade-info{
+background-color: rgb(248, 25, 55);
+border-radius: 25px;
+padding: 10px 30px;
+margin: 20px auto;
+width: 900px;
+box-shadow: 5px 5px 5px rgb(248, 190, 190);
+
+}
+h2{
+    text-align: center;
+    color: #ffffff;
+}
+.data{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(127, 212, 255);
+border-radius: 8px;
+padding: 8px 16px;
+border: none;
+flex: 1;
+max-width: 200px;
+color: #3e6b95;
+}
+.gallery ul :hover{
+background-color: #f79a21;
+color: #ffffff;
+transition: 0.5s;
+}
+
+.profile-card{
+    background-color: rgb(247, 119, 46);
+    color: #ffffff;
+    border-radius: 20px;
+    padding:30px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    min-width: 450px;
+}
+
+.profile-card hr {
+    width: 100%;          
+    border: 0;            
+    border-top: 1px solid #ffffff;     
+}
+
+.profile-img img{
+    flex: 1;               /* จัดสัดส่วนพื้นที่ให้รูปภาพ */
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;    /* ทำเป็นวงกลม */
+    border: 6px solid #4a3aff; /* เส้นขอบสีน้ำเงิน */
+    object-fit: cover;     /* ป้องกันรูปเบี้ยว */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    
+}
+.profile-img img:hover{
+    transform: scale(1.1);
+}
+.gradebox{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+
+}
+.trem{
+background-color: rgb(36, 190, 190);
+padding: 30px;
+margin: 50px;
+border-radius: 20px;
+color: #333;
+}
+.trem:hover{
+    box-shadow: palevioletred;
+}
+p{
+color: #ffffff;
+text-align: center;
+font-size: 16px;
+}
+footer{
+background-color: #224f5af3;
+color: #ffffff; 
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 16px;
+}
+.graedtrem{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.gradebox{
+    background-color: aquamarine;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.loveyou{
+    margin-right: 20px;
+    
+}
+.loveyou p {
+    text-align: left; 
+    margin-left: 20px;
+    
+}
+.gcolor {
+    color: red;
+    font-weight: bold;
+}
+</style>
+<body>
+    <header>
+        <h1>📚รายงานผลเกรด</h1>
+    </header>
+
+    <div class="container">
+        <div class="card-header">
+            <div class="gallery">
+                <ul>
+                    <li><a href="#box1">🧑‍🏫ข้อมูลนักศึกษา</a></li>
+                    <li><a href="#box2">📚ผลการเรียน</a></li>
+                    <li><a href="#box3">📲ติดต่อ</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    <div class="card-header" id="#box1">
+        <div class="profile-card">
+        <h1>👧Miss Yotwadee Hsp</h1>
+        <hr>
+            <div class="loveyou">
+<p>📚รหัสนักศึกษา:&emsp;&emsp;&emsp;674230007</p>
+<p>👧ชื่อ-นามสกุล:&emsp;&emsp;&emsp;ยศวดี หาญสีภูมิ</p>
+<p>🎓หมู่เรียน:&emsp;&emsp;&emsp;&emsp;&emsp;67/43</p>
+<p>🧑‍🏫อาจารย์ที่ปรึกษา:&emsp;&ensp;อ.พิชญา สุขปลั่ง</p>
+<p>⛓️Github:https://github.com/674230007/webbasic6743</p>
+            </div>
+        </div>
+
+        <div class="profile-img">
+            <img src="../img/baimint.JPG" alt="profile">
+        </div>
+    </div>
+
+
+<div class="graedtrem" id="">
+
+        <div  class="gradebox">💡ปี 1 เทอม 1 : <span class="gcolor">3.75</span></div>
+        <div  class="gradebox">💡ปี 1 เทอม 2 : <span class="gcolor">3.59</span></div>
+        <div  class="gradebox">💡ปี 2 เทอม 1 : <span class="gcolor">3.60</span></div>
+    </div>
+</div>
+
+    <div class="cardgrade-info" id="box2">
+        <h2>🏆เกรดเฉลี่ยสะสม: 3.61</h2>
+    </div>
+
+    </div>
+</body>
+<footer>
+    <p>&copy; 2024 webmaster by Yotwadee Hansripoom.id 674230007</p>
+    <p>🏔️Nakhonpathom Rajabhat University</p>
+</footer>
+</html>
