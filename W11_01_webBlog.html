@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="CSS/custom (1).css">
+    <link rel="stylesheet" href="../CSS/custom (1).css">
 </head>
 
 <body>
@@ -46,14 +46,19 @@
     <!-- Navbar -->
     <nav class="main-nav">
         <div class="wrapper">
-            <ul class="nav-menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">AI Technology</a></li>
-                <li><a href="#">Machine Learning</a></li>
-                <li><a href="#">Deep Learning</a></li>
-                <li><a href="#">AI Tools</a></li>
-                <li><a href="#">AI News</a></li>
-            </ul>
+            <div id="hamburger-menu">
+                <span></span>
+            </div>
+            <div id="menu">
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="index.html">AI Technology</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Deep Learning</a></li>
+                    <li><a href="#">AI Tools</a></li>
+                    <li><a href="#contact">AI News</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -103,7 +108,7 @@
                     <!-- Left Side -->
                     <main class="post-list">                       <!-- ไว้บอกตัวหลัก -->
                         <!-- card-01 -->
-                        <div class="card">
+                        <div class="card order-box-image">
                             <p class="card-headline">
                                 CATEGORY ARCHIVES: <strong>RESPONSIVE DESIGN</strong>
                             </p>
@@ -137,7 +142,7 @@
                         </div>
                         
                         <!-- card-02 -->
-                        <div class="card">
+                        <div class="card order-box-table">
                             <p class="card-headline">
                                 CATEGORY ARCHIVES:<strong> CSS DISPLAY PROPERTY</strong>
                             </p>
@@ -209,7 +214,7 @@
 
 
                         <!-- card-03 -->
-                        <div class="card">
+                        <div class="card order-box-form" id="contact">
                             <h2 class="contact-title">📞 ติดต่อเรา</h2>
                                 <div class="contact-form-main-card">
                                     <form action="" method="">
@@ -295,9 +300,9 @@
                     </main>
                     
                     <!-- right Side -->
-                    <aside>                     <!-- ไว้บอกด้านข้าง -->
+                    <aside class="sidebar-widget">                     <!-- ไว้บอกด้านข้าง -->
                         <!-- widget-01 -->
-                        <div class="widget">
+                        <div class="widget order-w-intro">
                             <div class="widget-title">สวัสดีค่ะ ยินดีต้อนรับ</div>
                             <p class="post-description">
                                 ฉันชื่อ Yotwadee เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ SME
@@ -311,7 +316,7 @@
 
                         
                         <!-- widget-02 -->
-                        <div class="widget">
+                        <div class="widget order-w-f-green">
                             <div class="contact-form-new">
                                 <h2 class="contact-title-new">📧 รับข่าวสารใหม่</h2>
                                 
@@ -348,7 +353,7 @@
 
                     
                         <!-- widget-03 -->
-                        <div class="widget">
+                        <div class="widget order-w-f-purple">
                             <div class="contact-form-new2">
                                 <h2 class="contact-title-new">💬 ติดต่อด่วน</h2>
 
@@ -379,7 +384,7 @@
 
 
                         <!-- widget-04 -->
-                        <div class="widget">
+                        <div class="widget order-w-fb">
                             <div class="widget-title">Facebook Like</div>
                             <div class="box-facebook">
                                 กล่อง Facebook Like (ตัวอย่าง)
@@ -388,7 +393,7 @@
                         </div>
 
                         <!-- widget-05 -->
-                        <div class="widget">
+                        <div class="widget order-w-sponser">
                         <div class="widget-title">Sponsor</div>
                         <div class="space-box">พื้นที่โฆษณา / วิดีโอ</div>
                         </div>
@@ -439,45 +444,45 @@
                                                     <td class="total-box-center">-</td>
                                                     <td class="total-box-center">-</td>
                                                     <td class="total-box-center">-</td>
-                                                    <td class="negative">▼ -1,950</td>
+                                                    <td class="negative"><span class="icon down"></span> -1,950</td>
                                                     <td class="total-box-right">49,100</td>
                                                     <td class="total-box-right">54,800</td>
                                                 </tr>
                                                 <tr>
                                                     <th>มี.ค.</th>
-                                                    <td class="negative">▼ -1,700</td>
+                                                    <td class="negative"><span class="icon down"></span> -1,700</td>
                                                     <td class="total-box-right">78,750</td>
                                                     <td class="total-box-right">79,050</td>
-                                                    <td class="positive">▲ +3,750</td>
+                                                    <td class="positive"><span class="icon up"></span> +3,750</td>
                                                     <td class="total-box-right">46,350</td>
                                                     <td class="total-box-right">50,100</td>
                                                 </tr>
                                                 <tr>
                                                     <th>ก.พ.</th>
-                                                    <td class="positive">▲ +3,400</td>
+                                                    <td class="positive"><span class="icon up"></span> +3,400</td>
                                                     <td class="total-box-right">68,200</td>
                                                     <td class="total-box-right">77,600</td>
-                                                    <td class="negative">▼ -1,850</td>
+                                                    <td class="negative"><span class="icon down"></span> -1,850</td>
                                                     <td class="total-box-right">44,600</td>
                                                     <td class="total-box-right">47,450</td>
                                                 </tr>
                                                 <tr>
                                                     <th>ม.ค.</th>
-                                                    <td class="positive">▲ +9,250</td>
+                                                    <td class="positive"><span class="icon up"></span> +9,250</td>
                                                     <td class="total-box-right">64,550</td>
                                                     <td class="total-box-right">81,950</td>
-                                                    <td class="positive">▲ +2,050</td>
+                                                    <td class="positive"><span class="icon up"></span> +2,050</td>
                                                     <td class="total-box-right">42,550</td>
                                                     <td class="total-box-right">44,850</td>
                                                 </tr>
                                                 <tr class="total-box">
                                                     <th>ทั้งปี</th>
-                                                    <td class="positive"><strong>▲ +14,350</strong></td>
-                                                    <td class="total-box-right"><strong>64,550</strong></td>
-                                                    <td class="total-box-right"><strong>81,950</strong></td>
-                                                    <td class="positive"><strong>▲ +22,550</strong></td>
-                                                    <td class="total-box-right"><strong>42,550</strong></td>
-                                                    <td class="total-box-right"><strong>67,400</strong></td>
+                                                    <td class="positive"><span class="icon up"></span> +14,350</td>
+                                                    <td class="total-box-right">64,550</td>
+                                                    <td class="total-box-right">81,950</td>
+                                                    <td class="positive"><span class="icon up"></span> 22,550</td>
+                                                    <td class="total-box-right">42,550</td>
+                                                    <td class="total-box-right">67,400</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -507,6 +512,27 @@
             Designed for educational/demo purposes • <a href="">Contact</a>
     </footer>
 
+
+<script>
+        var burgerMenu = document.getElementById('hamburger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+</script>
 
 
 </body>

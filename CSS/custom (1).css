@@ -292,7 +292,7 @@ a:hover {
 
 .post-description {
   font-size: 0.82rem;
-  color: #555;
+  color: #ffffff;
   margin: 10px 0;
 }
 /* css for card1  img */
@@ -616,6 +616,8 @@ a:hover {
   --bg01: #ffe6aa;
   --bg02: #ffffff;
   --bg03: #aeff93;
+  --bg04: #fd0101;
+  --bg05: #03b10c;
 }
 .wrap-gold-table {
   background-color: var(--bg02);
@@ -630,6 +632,11 @@ a:hover {
   border-collapse: collapse;
   width: 100%;
 }
+.gold-table .total-box th,
+.gold-table .total-box td {
+  background-color: var(--bg03);
+  font-weight: bold;
+}
 .gold-table thead th,
 .gold-table tbody th {
   background-color: var(--bg01);
@@ -640,36 +647,43 @@ a:hover {
   border: 1px solid var(--line);
   padding: 10px 2px;
 }
+.total-box-center {
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
 .total-box-right {
   color: #333;
   text-align: right;
   padding-right: 15px !important;
 }
 .negative {
-  color: #a91414;
-  display: flex;
+  color: var(--bg04);
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-}
-.positive {
-  color: #03852c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.total-box-center {
-  font-weight: 600;
-  color: #333;
+  align-items: center; */
   text-align: center;
 }
-
-
-
-
-
-
-
-
+.positive {
+  color: var(--bg05);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+}
+.icon {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.up {
+  border-bottom: 10px solid var(--bg05);
+}
+.down {
+  border-top: 10px solid var(--bg04);
+}
 .footer {
   background-color: #000000f3;
   color: #ffffff;
@@ -678,19 +692,150 @@ a:hover {
   padding: 25px;
   margin-top: 10px;
 }
-
 /*==== Right Side-Aside ====*/
 .widget {
-  background-color: white;
+  background-color: rgb(161, 161, 161);
   border-radius: 4px;
-
   padding: 18px;
 }
 
 .widget + .widget {
   margin-top: 10px;
 }
-.gold-table .total-box th,
-.gold-table .total-box td {
-  background-color: var(--bg03);
+#hamburger-menu {
+  display: none;
+}
+
+/* ====================================================== */
+/* RESPONSIVE=========================================== */
+/* ====================================================== */
+
+/* สำหรับหน้าจอ 922 */
+@media (max-width: 922px) {
+  .site-header {
+    background-color: yellow;
+  }
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* สำหรับหน้าจอ 768 */
+@media (max-width: 768px) {
+  .site-header {
+    background-color: rgb(5, 192, 52);
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .form-checkbox-group {
+    flex-direction: column;
+  }
+  html {
+    font-size: 14px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    padding-top: 5px;
+  }
+}
+
+/* สำหรับหน้าจอ 576 */
+@media (max-width: 576px) {
+  .site-header {
+    background-color: rgb(247, 124, 226);
+  }
+
+  /* Hamburger-menu ตัวแม่ */
+  #hamburger-menu {
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    z-index: 1000;
+  }
+
+  /* วาดเส้น Hamburger ตัวลูก*/
+  #hamburger-menu span,
+  #hamburger-menu span:before,
+  #hamburger-menu span:after {
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    content: "";
+    transition: all 0.3s ease;
+  }
+  #hamburger-menu span {
+    top: 13px;
+  }
+
+  #hamburger-menu span:before {
+    top: -8px;
+  }
+
+  #hamburger-menu span:after {
+    top: 8px;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  /* สร้างเส้น X*/
+  #hamburger-menu.close span:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #hamburger-menu.close span {
+    background: transparent;
+  }
+  #hamburger-menu.close span:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  /* ซ่อน เมนู */
+  #menu {
+    display: none;
+  }
+
+  /* แสดง เมนู */
+  #menu.overlay {
+    display: flex;
+  }
+  /* สลับตำแหน่ง ITEM */
+  .order-box-image {
+    order: 3;
+  }
+  .order-box-table {
+    order: 1;
+  }
+  .order-box-form {
+    order: 2;
+  }
+
+  .order-w-intro {
+    order: 1;
+  }
+  .order-w-f-green {
+    order: 4;
+  }
+  .order-w-f-purple {
+    order: 5;
+  }
+  .order-w-fb {
+    order: 2;
+  }
+  .order-w-sponser {
+    order: 3;
+  }
+  .sidebar-widget {
+    display: flex;
+    flex-direction: column;
+  }
 }
